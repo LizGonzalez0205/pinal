@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CONVERSION DE MONEDAS</title>
+    <link rel="stylesheet" href="../Estilos_pinal.css">
+</head>
+<body class="color">
+    <center>
+        <div class="cuerpo3">
+            <header class="cabecera4">
+                <div class="datos3">
+                    <a href="../Páginas HTML/Problemas matematicos.html">
+                        <img src="../Imagenes/izquierda.png" class="regresar1">
+                      </a>
+                  <h1>CONVERCION DE MONEDAS</h1>
+                </div><br>
+                <h3>INGRESA TU CANTIDAD Y ELIGUE UNA CONVERCION</h3><br>
+                <div class="converciones">
+                    <input class="mama" type="button" value="PESOS A DOLARES" id="macm" onclick="pesos_a_dolares()">
+                    <input type="button" value="DOLARES A EUROS" id="kmadm" class="mama" onclick="km_a_dm()">
+                    <input type="button" value="MILILITROS A LITROS" id="mlal" class="mama" onclick="ml_a_l()">
+                    <input type="button" value="YD A PL" id="ydapl" class="mama" onclick="yd_a_pl()">
+                    <input type="button" value="YARDAS A PULGADAS" id="kmaft" class="mama" onclick="km_a_ft()"> <br><br>
+                </div>
+                <div class="operacion2">
+                    <h1 id="d1" >OPERACION</h1>
+                    <h1 id="d2" hidden >PESOS A DOLARES</h1>
+                    <h1 id="d3" hidden >DOLARES A EUROS</h1>
+                    <h1 id="d4" hidden >DOLARES A PESOS</h1>
+                    <h1 id="d5" hidden >YARDAS A PULGADAS</h1>
+                    <h1 id="d6" hidden >KILOMETROS A PIES</h1>
+                    <br><br>
+                    <h2  id="d7">NUMERO 1 :</h2><br>
+                    <input class="caj1" type="text" id="t7"><br>
+                    <br>
+                    <h2 id="d8">RESULTADO :</h2><br>
+                    <input class="caj2" type="text" id="d10">
+                    <br><br><br>
+                    <a href="#" onclick="dolares_a_pesos()">
+                        <img src="../Imagenes/viseversa.png" class="regresar1">
+                      </a>
+                    <input class="botoncitos1 btn-1" type="button" value="BORRAR" id="borrar" onclick="borrar()">
+                    <input class="botoncitos1 btn-1" type="button" value="OCULTAR" id="ocultar" onclick="ocultar()">
+                    <input class="botoncitos1 btn-1" type="button" value="MOSTRAR" id="mostrar" onclick="mostrar()">
+                </div>
+            </header>
+        </div>
+        <script>
+            function pesos_a_dolares()
+            {
+                var pesos = document.getElementById('t7').value;
+                var pesos_conver = parseInt(pesos);
+                var dolares = pesos_conver * 0.059;
+                document.getElementById('d10').value = dolares;
+                document.getElementById("d2").style.display = "block";
+                document.getElementById("d3").style.display = "none";
+                document.getElementById("d4").style.display = "none";
+                document.getElementById("d5").style.display = "none";
+                document.getElementById("d1").style.display = "none";
+                document.getElementById("d6").style.display = "none";
+            }
+            function dolares_a_pesos()
+            {
+                var dolares = document.getElementById('t7').value;
+                
+                var dolares_conver = parseFloat(dolares);
+                var pesos = dolares_converr * 16.96;
+                document.getElementById('d10').value = pesos;
+                document.getElementById("d4").style.display = "block";
+                document.getElementById("d4").style.display = "none";
+                document.getElementById("d5").style.display = "none";
+                document.getElementById("d6").style.display = "none";
+                document.getElementById("d1").style.display = "none";
+                document.getElementById("d2").style.display = "none";
+            }
+            function ml_a_l()
+            {
+                var lts = document.getElementById('t7').value;
+                
+                var lts_conver = parseFloat(lts);
+                var resultado = lts_conver/ 1000;
+                document.getElementById('d10').value = resultado;
+                document.getElementById("d4").style.display = "block";
+                document.getElementById("d5").style.display = "none";
+                document.getElementById("d6").style.display = "none";
+                document.getElementById("d1").style.display = "none";
+                document.getElementById("d2").style.display = "none";
+                document.getElementById("d3").style.display = "none";
+            }
+            function yd_a_pl()
+            {
+                var pul = document.getElementById('t7').value;
+                
+                var pul_conver = parseFloat(pul);
+                var resultado = pul_conver * 36;
+                document.getElementById('d10').value = resultado;
+                document.getElementById("d5").style.display = "block";
+                document.getElementById("d1").style.display = "none";
+                document.getElementById("d2").style.display = "none";
+                document.getElementById("d3").style.display = "none";
+                document.getElementById("d4").style.display = "none";
+                document.getElementById("d6").style.display = "none";
+            }
+            function km_a_ft()
+            {
+                var pies = document.getElementById('t7').value;
+                
+                var pies_conver = parseFloat(pies);
+                var resultado = pies_conver *3281;
+                document.getElementById('d10').value = resultado;
+                document.getElementById("d6").style.display = "block";
+                document.getElementById("d1").style.display = "none";
+                document.getElementById("d2").style.display = "none";
+                document.getElementById("d3").style.display = "none";
+                document.getElementById("d4").style.display = "none";
+                document.getElementById("d5").style.display = "none";
+            }
+            function mostrar()
+                {
+                    document.getElementById("d7").style.display = "block";
+                    document.getElementById("d1").style.display = "block";
+                    document.getElementById("d8").style.display = "block";
+                    document.getElementById("t7").style.display = "block";
+                    document.getElementById("d10").style.display = "block";
+                }
+                function borrar()
+                {
+                    document.getElementById("t7").value = "";
+                    document.getElementById("d10").value = "";
+                }
+                function ocultar()
+                {
+                    document.getElementById("d1").style.display = "none";
+                    document.getElementById("d2").style.display = "none";
+                    document.getElementById("d3").style.display = "none";
+                    document.getElementById("d4").style.display = "none";
+                    document.getElementById("d6").style.display = "none";
+                    document.getElementById("d7").style.display = "none";
+                    document.getElementById("d8").style.display = "none";
+                    document.getElementById("d10").style.display = "none";
+                    document.getElementById("t7").style.display = "none";
+                }
+        </script> 
+    </center>
+</body>
+</html>

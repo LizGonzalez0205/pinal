@@ -1,0 +1,45 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title class="menu">MENU OPERACIONES</title>
+    <link rel="stylesheet" href="../Estilos_pinal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body >
+        <div class="cabecera">
+            <a href="../index.html">
+              <img src="../Imagenes/izquierda.png" class="regresar">
+            </a>
+            <h1 class="turistico">MENU DE OPCIONES</h1>
+          </div>
+        <div class="opciones"> <br></br>
+                <a class="negro" id="operaciones" href="../Páginas HTML/Operaciones.html">
+                    <img src="../Imagenes/operaciones.png" class="img2">
+                    <br><br>
+                    <h3 class="letra">OPERACIONES ARITMETICAS</h3>
+                </a>
+                <a class="negro" id="conversiones" href="../Páginas HTML/Converciones.html">
+                    <img src="../Imagenes/grados.png" class="img2" alt=""><br><br>
+                    <h3 class="letra">CONVERSIONES</h3>
+                </a>
+                <a class="negro" id="factorial" href="../Páginas HTML/Equivalencias de unidades.html">
+                    <img src="../Imagenes/unidades.png" class="img2"><br><br>
+                    <h3 class="letra">EQUIVALENCIA DE UNIDADES</h3>
+                </a>
+                <a class="negro" id="mayor" href="../Páginas HTML/Conversion de monedas.html">
+                    <img src="../Imagenes/conversion.png" class="img2"><br><br>
+                    <h3 class="letra">CONVERCION DE MONEDAS</h3>
+                </a>
+        </div>
+    <script>
+        $(document).ready(function(){
+            $('.img2').hover(function() {
+                $(this).addClass('transition');
+            }, function() {
+                $(this).removeClass('transition');
+            });
+        });
+        </script>
+</body>
+</html>

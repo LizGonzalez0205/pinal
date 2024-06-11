@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>OPERACIONES ARITMETICAS</title>
+    <link rel="stylesheet" href="../Estilos_pinal.css">
+</head>
+<body class="hola">
+    <center>
+        <div class="cuerpo2">
+            <header class="cabecera3">
+                <div class="datos2">
+                    <a href="../Páginas HTML/Problemas matematicos.html">
+                    <img src="../Imagenes/izquierda.png" class="regresar1">
+                  </a>
+                <strong><h1>OPERACIONES ARITMETICAS</h1></strong>
+                    <br>
+                </div>
+                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                <div class="operaciones">
+                    <h4 class="titulo" id="b1">ESCRIBE 2 NÚMEROS Y ELIGUE LA OPERACION A REALIZAR</h4><br>
+                    <input class="operacion1 liz1" type="button" value="SUMA" id="suma" onclick="suma()">
+                    <input type="button" value="RESTA" id="suma" class="operacion1 liz2" onclick="resta()">
+                    <input type="button" value="MULTIPLICACION" id="multiplicacion" class="operacion1 liz3" onclick="multiplicación()">
+                    <input type="button" value="DIVISION" id="suma" class="operacion1 liz4" onclick="división()">
+                </div>
+                <br>
+                <div class="operacion">
+                    <h1 class="titulo" id="c1" hidden >SUMA</h1>
+                    <h1 class="titulo" id="c2" hidden >RESTA</h1>
+                    <h1 class="titulo" id="c3" hidden >MULTIPLICACION</h1>
+                    <h1 class="titulo" id="c4" hidden >DIVISION</h1>
+                    <br><br>
+                    <h2 class="num1" id="b2">NUMERO 1 :</h2><br>
+                    <input class="cj1" type="text" id="b3"><br>
+                    <br>
+                    <h2 class="" id="b4">NUMERO 2 :</h2><br>
+                    <input class="cj2" type="text" id="b5"><br><br>
+                    <h2 class="res" id="b6">RESULTADO :</h2><br>
+                    <input class="cj3" type="text" id="b7"><br><br><br>
+                <!-- </div>
+                <div class="opcion_bo"> -->
+                    <input class="botoncitos" type="button" value="BORRAR" id="borrar" onclick="borrar()">
+                    <input class="botoncitos" type="button" value="OCULTAR" id="ocultar" onclick="ocultar()">
+                    <input class="botoncitos" type="button" value="MOSTRAR" id="mostrar" onclick="mostrar()">
+                    <br>
+                </div>
+            </header>
+        </div>
+        <script>
+            function suma()
+            {
+                var n1 = document.getElementById('b3').value;
+                var n2 = document.getElementById('b5').value;
+            
+                var n1_conver = parseInt(n1);
+                var n2_conver = parseInt(n2);
+                var resultado = n1_conver + n2_conver;
+                document.getElementById('b7').value = resultado;
+                document.getElementById("c1").style.display = "block";
+                document.getElementById("b1").style.display = "none";
+                document.getElementById("c2").style.display = "none";
+                document.getElementById("c3").style.display = "none";
+                document.getElementById("c4").style.display = "none";
+            }
+            function resta()
+                {
+                    document.getElementById('b1').value = "RESTA";
+                    var j1 = document.getElementById('b3').value;
+                    var j2 = document.getElementById('b5').value;
+                
+                    var k1_conver = parseInt(j1);
+                    var k2_conver = parseInt(j2);
+                    var resultado2 = k1_conver - k2_conver;
+                    document.getElementById('b7').value = resultado2;
+                    document.getElementById("c2").style.display = "block";
+                    document.getElementById("b1").style.display = "none";
+                    document.getElementById("c3").style.display = "none";
+                    document.getElementById("c4").style.display = "none";
+                    document.getElementById("c1").style.display = "none";
+                }
+            function multiplicación()
+                {
+                    document.getElementById('b1').value = "MULTIPLICACION";
+                    var mul1 = document.getElementById('b3').value;
+                    var mul2 = document.getElementById('b5').value;
+                
+                    var m1_conver = parseInt(mul1);
+                    var m2_conver = parseInt(mul2);
+                    var resultado3 = m1_conver * m2_conver;
+                    document.getElementById('b7').value = resultado3;
+                    document.getElementById("c3").style.display = "block";
+                    document.getElementById("b1").style.display = "none";
+                    document.getElementById("c1").style.display = "none";
+                    document.getElementById("c2").style.display = "none";
+                    document.getElementById("c4").style.display = "none";
+                }
+                function división()
+                {
+                    document.getElementById('b1').value = "DIVISION";
+                    var div1 = document.getElementById('b3').value;
+                    var div2 = document.getElementById('b5').value;
+                
+                    var d1_conver = parseInt(div1);
+                    var d2_conver = parseInt(div2);
+                    var resultado4 = d1_conver / d2_conver;
+                    document.getElementById('b7').value = resultado4;
+                    document.getElementById("c4").style.display = "block";
+                    document.getElementById("b1").style.display = "none";
+                    document.getElementById("c1").style.display = "none";
+                    document.getElementById("c2").style.display = "none";
+                    document.getElementById("c3").style.display = "none";
+                }
+                function borrar()
+                {
+                    document.getElementById("b3").value = "";
+                    document.getElementById("b5").value = "";
+                    document.getElementById("b7").value = "";
+                }
+                function ocultar()
+                {
+                    document.getElementById("b1").style.display = "none";
+                    document.getElementById("b2").style.display = "none";
+                    document.getElementById("b3").style.display = "none";
+                    document.getElementById("b4").style.display = "none";
+                    document.getElementById("b5").style.display = "none";
+                    document.getElementById("b6").style.display = "none";
+                    document.getElementById("b7").style.display = "none";
+                    document.getElementById("b8").style.display = "none";
+                    document.getElementById('ocultar1').value = "MOSTRAR";
+                }
+                function mostrar()
+                {
+                    document.getElementById("b1").style.display = "block";
+                    document.getElementById("b2").style.display = "block";
+                    document.getElementById("b3").style.display = "block";
+                    document.getElementById("b4").style.display = "block";
+                    document.getElementById("b5").style.display = "block";
+                    document.getElementById("b6").style.display = "block";
+                    document.getElementById("b7").style.display = "block";
+                    document.getElementById("b8").style.display = "block";
+                    document.getElementById('ocultar1').value = "OCULTAR";
+                }
+        </script>
+    </center>
+</body>
+</html>

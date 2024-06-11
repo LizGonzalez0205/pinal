@@ -1,0 +1,1007 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.principal{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    border: 1pz solid blueviolet;
+    background-size:cover;
+    text-align: center;
+    background-image:linear-gradient(120deg, rgb(118, 223, 157) 0%, rgb(107, 162, 189) 100%);
+    justify-content: center;    
+}
+.ola1{
+    bottom: 0%;
+    position: absolute;
+    width: 100%;
+    
+}
+.logo{
+    width: 100%;
+    height: 130px;
+    background-size: cover;
+    border: solid 2px black;
+    padding: 10px;
+}
+.logo1{
+    width: 110px;
+    height: 110px;
+    border: 1px solid blue;
+    padding: 5px;
+    text-align: center;
+}
+.logoimg{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    text-align: center;
+}
+.botones{
+    width: 100%;
+    height: 65px;
+    bottom: 0%;
+    position: absolute;
+    flex-direction:row;
+    display: flex;
+    justify-content: space-evenly;
+}
+.estilo_a{
+    width: 130px;
+    margin-left: 5px;
+    height: 60px;
+    color: black;
+    background-color: aqua;
+    text-align: center;
+    border-radius: 10%;
+    overflow: hidden;
+    padding: 5px;
+    display: flexbox;
+    justify-content: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+    .estilo_a {
+        font-size: 12px;
+    }
+}
+.a{
+    font-size: auto;
+}
+/* CARRUSEL */
+.carrusel{
+    width: 100%;
+    height: 400px;
+}
+.pago{
+    width: 100%;
+    height: 80px;
+}
+.imagenes45{
+    width: 100%;
+    height: 500px;
+}
+.grupo1{
+    width: 100%;
+    height: 90px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding: 3px;
+}
+button{
+    width: 8%;
+    height: 80px;
+}
+@keyframes slide{
+    0% {margin-left: 0%;}
+    20%{margin-left: 0%;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+}
+.tabla{
+    width: 100%;
+    height: 500px;
+    border: 4px solid #c12626;
+    position: relative;
+    text-align: center;
+}
+.filas{
+    width: 25%;
+    height: 50px;
+}
+/* INFORMACION DEL SITIO */
+.bo1{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+.encabezado{
+    width: 100%;
+    height: 300px;
+    background-image: url(Imagenes/Pinal\ 4.jpg);
+    background-size: cover;
+    border: 1px solid white;
+    background-attachment: fixed;
+}
+.turistico{
+    text-align: center;
+    justify-content: center;
+    font-size: 60px;
+    margin-top: 10px;
+}
+.Lugares{
+    margin-top: 80px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+.Lugar{
+    width: 24%;
+    height: 500px;
+    font-family:  "Fira Sans", sans-serif; 
+    display: inline-block;
+    position: static;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    padding: 10px;
+}
+@media screen and (max-width: 1200px) {
+    p {
+        font-size: 5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .turistico {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .img {
+        width: 80%;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nombre {
+        font-size: 10px;
+    }
+}
+
+.img{
+    width: 23%px;
+    height: 200px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.m1{
+    width: 80%;
+    height: 200px;
+}
+.transition {
+    -webkit-transform: scale(1.8); 
+    -moz-transform: scale(1.8);
+    -o-transform: scale(1.8);
+    transform: scale(1.8);
+}
+.regresar{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 39px;
+}
+/* PROBLEMAS MATEMATICOS */
+/* .bo2{
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+} */
+@media screen and (min-width: 400px) {
+    .img2{
+        width: 80%;
+        height: 100px;
+    }
+
+}
+.cabecera{
+    width: 100%;
+    height: 200px;
+    border: 1px solid white;
+    margin-top: -30px;
+}
+.opciones{
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    display: inline-flex;
+    padding: 20px;
+    border: 5px solid black;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.img2{
+        width: 23%px;
+        height: 200px;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+}
+
+@media screen and (max-width: 1300px) {
+    .img2 {
+        width: 80%;
+        height: 100px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .letra {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .titulo {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    .opciones {
+       height: 250px;
+    }
+
+    .negro{
+        height: 200px;
+    }
+}
+.hola{
+    /* background-image:  linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%); */
+    height: 900px;
+}
+.negro{
+    color: black;
+    border: 5px solid black;
+    font-size: 20px;
+    justify-content: space-evenly;
+    width: 25%;
+}
+.cuerpo2{
+    width: 100%;
+    height: 900px;
+    background-image: url(Imagenes/matematicas.jpeg);
+    background-size: cover;
+}
+.cuerpo2>.cabecera3{
+    width: 100%;
+    height: 80px;
+    background-color: red;
+    border: black solid 5px;
+}
+.cuerpo2>.cabecera3>.datos2{
+    color: black;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    justify-content: space-evenly;
+    height: 74px;
+    display: inline-flex;
+}
+.operaciones{
+    width: 100%;
+    height: 80px;
+    margin-top: 3px;
+}
+.operacion1{
+    width: 20%;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    justify-content: space-evenly;
+    -webkit-transition: all 150ms linear;
+          transition: all 150ms linear;
+}
+.liz1:hover {
+    background: #3498db;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+    color: #74e6e0;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #136a65;
+    -webkit-transition: all 250ms linear;
+            transition: all 250ms linear;
+  }
+  .liz1 .rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1;
+    stroke-dasharray: 422, 0;
+  }
+  .liz2:hover {
+    background: rgba(225, 51, 45, 0);
+    letter-spacing: 1px;
+    font-weight: 900;
+  }
+  .liz2:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+            transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .liz2 rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1;
+    stroke-dasharray: 422, 0;
+    
+  }
+  .liz3:hover:after,
+.liz3:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #fff;
+  -webkit-transition: width 350ms ease-in-out;
+          transition: width 350ms ease-in-out;
+  width: 70%;
+}
+.liz3:hover,
+.liz3:active {
+  letter-spacing: 1px;
+}
+.liz3:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+.liz4 {
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 0px;
+    text-shadow: none;
+    -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+            transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 0px;
+  }
+  
+  .liz4:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-offset: 15px;
+    outline-color: rgba(255, 255, 255, 0);
+    text-shadow: 1px 1px 2px #427388;
+  }
+
+.operacion{
+    width: 85%;
+    height: 500px;
+}
+.titulo{
+    font-size: 20px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.operacion>.num1{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.operacion>.cj1{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 190px;
+    height: 40px;
+    color: black;
+    text-align: center;
+}
+.operacion>.num2{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.operacion>.cj2{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 190px;
+    height: 40px;
+    color: black;
+    text-align: center;
+}
+.operacion>.res{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.operacion>.cj3{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 190px;
+    height: 40px;
+    color: black;
+    text-align: center;
+    background-color: chartreuse;
+    border: solid 3.5px black;
+}
+.operacion>.calcular{
+    width: 195px;
+    height: 50px;
+    background-color: darkgoldenrod;
+    color: black;
+    font-size: 30px;
+    margin-left: 10px;
+    display: inline-block;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.botoncitos{
+    width: 15%;
+    height: 50px;
+    font-size: 15px;
+    padding: 10px;
+    justify-content: space-between;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #D80286;
+}
+.botoncitos:hover {
+    box-shadow: inset 0 0 0 50px #D80286;
+  }
+.regresar1{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 150px;
+    margin-left: -150px;
+}
+/* COVERCIONES */
+.cuerpo3{
+    width: 100%;
+    height: 900px;
+    background-image: url(Imagenes/grados_radianes.jpg);
+    background-size: cover;
+    color: white;
+}
+.num{
+    background-color: #000;
+    height: 50px;
+}
+.num2{
+    background-color: #000;
+    width: 20%;
+}
+/* .grados{
+    color:black;
+    width: 70%;
+} */
+.titulo1{
+    color: white;
+    font-size: 20px;
+    width: 45%;
+    background-color: #000;
+}
+.text-box {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gr{
+	font-size: 4vw;
+	font-weight: 900;
+	background-color: #000;
+	color: #fff;
+	display: block;
+	padding: .5em;
+}
+
+.gr:nth-child(2) {
+	position: absolute;
+	background-color: #fff;
+	color: #000;
+	clip-path: inset(-1% -1% 50% -1%); 
+}
+.container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.datos3{
+    position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.regresar2{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 150px;
+    margin-left: -700px;
+    background-color: white;
+    border-radius: 100%;
+
+}
+.botoncitos1{
+    width: 15%;
+    height: 50px;
+    font-size: 15px;
+    padding: 10px;
+    justify-content: space-evenly;
+    color: black;
+    cursor: pointer;
+    display: block;
+    font-size:16px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 160px; 
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%; 
+    margin-left: 0;
+    text-align: center;
+    
+   @media(min-width: 400px) {
+     display: inline-block;
+     margin-right: 2.5em;
+    
+     &:nth-of-type(even) {
+       margin-right: 0;
+     }
+   }
+    
+    @media(min-width: 600px)
+     {
+        
+      margin: 0, 1em,  2em;
+     &:nth-of-type(even) {
+       margin-right: 2.5em;
+     }
+      
+     &:nth-of-type(5) {
+       margin-right: 0;
+     }
+      
+    }
+    
+    &:hover { text-decoration: none; }
+}
+.btn-1 {
+    background: darken(red, 1.5%);
+    font-weight: 100;
+    
+    svg {
+      height: 45px;
+      left: 0;
+      position: absolute;
+      top: 0; 
+      width: 100%; 
+    }
+    
+    rect {
+      fill: none;
+      stroke: #fff;
+      stroke-width: 2;
+      stroke-dasharray: 422, 0;
+      transition: all 0.35s linear;
+    }
+  }
+  
+  .btn-1:hover {
+    background: rgba(red, 0);
+    font-weight: 900;
+    letter-spacing: 1px;
+    
+    rect {
+      stroke-width: 5;
+      stroke-dasharray: 15, 310;
+      stroke-dashoffset: 48;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+  /* EQUIVALENCIAS DE UN NUMERO */
+  .color{
+    background-color: rgb(28, 149, 206);
+}
+.cuerpo3{
+    width:100%;
+    height: 700px;
+    background-color: rgb(240, 89, 177);
+    background-image: url(Imagenes/equivalencias.png);
+    background-size: cover;
+}
+.btn {
+  color: #070606;
+  cursor: pointer;
+   display: block;
+  font-size:16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%; 
+  
+  @media(min-width: 400px) {
+    display: inline-block;
+    margin-right: 2.5em;
+  
+    &:nth-of-type(even) {
+      margin-right: 0;
+     }
+   }
+  
+  @media(min-width: 600px) {
+      
+    margin: 0 1em 2em;
+  
+     &:nth-of-type(even) {
+       margin-right: 2.5em;
+     }
+ 
+    &:nth-of-type(5) {
+       margin-right: 0;
+     }
+    
+  }
+  
+  &:hover { text-decoration: none; }
+  
+}
+.btn-5 {
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(22, 207, 182, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  } 
+  
+  .btn-5:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(155, 3, 124, 0.5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgb(0, 0, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #000000; 
+  }
+  View Compiled
+  
+  
+.cuerpo3>.cabecera4{
+    width: 100%;
+    height: 80px;
+    background-color: darkorange;
+    border: black solid 5px;
+}
+.cuerpo3>.cabecera4>.datos3{
+    color: black;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+.converciones{
+    width: 100%;
+    height: 80px;
+    margin-top: 3px;
+}
+.operacion2{
+    width: 85%;
+    height: 400px;
+}
+.operacion2>.titulo{
+    font-size: 45px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.operacion2>.n1{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.operacion2>.caj1{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 190px;
+    height: 40px;
+    color: black;
+    text-align: center;
+}
+.operacion2>.res2{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.operacion2>.caj2{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 190px;
+    height: 40px;
+    color: black;
+    text-align: center;
+    border: solid 3.5px black;
+}
+.operacion2>.calcular2{
+    width: 180px;
+    height: 60px;
+    background-color: darkgoldenrod;
+    color: black;
+    font-size: 30px;
+    margin-left: 10px;
+    display: inline-block;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.pies3>.borrar2{
+    width: 180px;
+    height: 60px;
+    background-color: gold;
+    font-size: 30px;
+    margin-left: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    padding: 5px;
+}
+.pies3>.OCULTAR2{
+    width: 180px;
+    height: 60px;
+    background-color: red;
+    font-size: 30px;
+    margin-left: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+.pies3>.MOSTRAR{
+    width: 180px;
+    height: 60px;
+    background-color: rgb(238, 130, 180);
+    font-size: 30px;
+    margin-left: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+.pies3>.regresar3{
+    width: 250px;
+    height: 60px;
+    background-color: violet;
+    font-size: 30px;
+    margin-left: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+.mama{
+    width: 15%;
+    height: 40px;
+    font-size: 13px;
+}
+/* CONVERSION DE MONEDAS */
+.cuerpo4{
+    width:100%;
+    height: 700px;
+    background-color: rgb(240, 89, 177);
+    background-image: url(./Imagenes/monedas.jpg);
+    background-size: cover;
+}
+/* PLAY LIST */
+.top{
+    text-align: center;
+    margin-top: 120px;
+}
+.portadasplay{
+    width: 100%;
+    height: 300px;
+}
+.reproductor{
+    width: 100%;
+    height: 80px;
+}
+@media screen and (max-width: 355px) {
+    .top {
+        width: 100%;
+    }
+}
+.regresar3{
+    background-color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 10%;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.musica{
+    width: 20%;
+    height: 600px;
+    overflow-y: scroll;
+}
+/* GALERIA ANIMADA */
+.encabezado1{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(-225deg, #2cd8d52b 0%, #c5c1ff5a 56%, #ffbac354 100%), url(Imagenes/galeria.jpg);
+    background-attachment: fixed;
+    border: 1px solid white;
+}
+.caja1{
+    width: 100%;
+    height: 200px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.caja2{
+    width: 100%;
+    height: 200px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.tamaño{
+    width: 15%;
+}
+.Imagenes{
+    border-radius: 20px;
+    width: 16.66666667%;
+}
+.img1:hover {
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5)
+}
+.img2{
+    float: left;
+    margin: 15px;
+    transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+.img2:hover {
+    margin-top: 2px;
+}
+.body7{
+    background-color: plum;
+}
+.ola2{
+    width: 100%;
+    position: absolute;
+    bottom: 50%;
+}
+/* INFORMACION COMPLETA */
+.imagen{
+    height: 500px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.portadasplay2{
+    width: 100%;
+    height: 300px;
+}
+.contenedor:hover .portadasplay2
+ {
+    -webkit-transform:scale(.9);
+    transform:scale(.9);
+}
+.contenedor
+ {
+    overflow:hidden;
+}
+/* ACERCA DE */
+.info{
+    width: 70%;
+    height: 500px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.info1{
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.img10{
+    width: 100px;
+    height: 100px;
+}
+.imggusto{
+    width: 500%;
+    height: 150px;
+}
+.texto45{
+    height: 500px;
+}
+.pp{
+    font-size: 12px;
+}
+.po{
+    font-size: 20px;
+}
+@media screen and (max-width: 1200px) {
+    .pp {
+        font-size: 5px;
+    }
+    .po {
+        font-size: 10px;
+    }
+}
+.grr{
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+/* REGISTRO */
+.principal1{
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    border: 1pz solid blueviolet;
+    background-size:cover;
+    text-align: center;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    justify-content: center;    
+}
+.contacto{
+    font-size: 50px;
+    margin-top: 70px;
+}
+.contacto1{
+    width: 80%;
+    height: 500px;
+    position: relative;
+    display: inline-block;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.aja{
+    width: 90%;
+    font-size: 20px;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+}
+.aja1{
+    justify-content: left;
+    font-size: 25px;
+    text-align: center;
+}
+.aja2{
+    width: 40%;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
